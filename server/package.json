@@ -1,0 +1,27 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "koa https server",
+  "main": "src/index.js",
+  "scripts": {
+    "env": "export HTTPS=true && SSL_CRT_FILE=cert.pem && SSL_KEY_FILE=key.pem",
+    "dev": "node ./src/index.js",
+    "app": "yarn env && yarn auto",
+    "auto": "yarn open && ./node_modules/nodemon/bin/nodemon.js ./src/index.js",
+    "start": "./node_modules/pm2/bin/pm2 start src/index.js",
+    "open": "open http://localhost:3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "pm2": "^4.5.0"
+  }
+}

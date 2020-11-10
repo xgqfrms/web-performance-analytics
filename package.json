@@ -1,0 +1,34 @@
+{
+  "name": "web-performance-analytics",
+  "version": "1.0.1",
+  "description": "web-performance-analytics",
+  "author": "xgqfrms",
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "performance",
+    "analytics"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build/index.min.js",
+    ".editorconfig",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/web-performance-analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xgqfrms/web-performance-analytics/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/web-performance-analytics#readme"
+}

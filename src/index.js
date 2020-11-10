@@ -5,7 +5,7 @@
  * @author xgqfrms
  * @license MIT
  * @copyright xgqfrms
- * @created 2020-09-01
+ * @created 2020-11-01
  * @modified
  *
  * @description
@@ -25,6 +25,7 @@ const log = console.log;
 const WPA = (datas = [], debug = false) => {
   let result = ``;
   // do something...
+  log(`🚀 PWA is init....`);
   return result;
 };
 

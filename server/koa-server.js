@@ -27,7 +27,9 @@ const app = new Koa();
 
 // logger
 app.use(async (ctx, next) => {
+  log(`🔖 1`)
   await next();
+  log(`🔖 2`)
   const rt = ctx.response.get('X-Response-Time');
   log(`${ctx.method} ${ctx.url} - ${rt}`);
 });
@@ -35,13 +37,16 @@ app.use(async (ctx, next) => {
 // x-response-time
 app.use(async (ctx, next) => {
   const start = Date.now();
+  log(`🔖 3`)
   await next();
+  log(`🔖 4`)
   const ms = Date.now() - start;
   ctx.set('X-Response-Time', `${ms}ms`);
 });
 
 // response
 app.use(async ctx => {
+  log(`🔖 5`)
   ctx.body = 'Hello World';
 });
 

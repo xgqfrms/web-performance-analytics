@@ -56,7 +56,7 @@ const logVisit = (url = ``) => {
 window.addEventListener(`pagehide`, (e) => {
   log(`window beforeunload`);
   // ✅ good place for sendBeacon
-  logVisit(`/api/log`);
+  logVisit(`http://localhost:3000/api/log`);
   if (event.persisted) {
     /* the page isn't being discarded, so it can be reused later */
   }
@@ -75,7 +75,7 @@ document.addEventListener(`visibilitychange`, (e) => {
   // }
   // log(`window visibilitychange`);
   // ✅ good place for sendBeacon
-  logVisit(`/api/log`);
+  logVisit(`http://localhost:3000/api/log`);
 });
 
 

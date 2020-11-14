@@ -48,6 +48,7 @@ app.use(async (ctx, next) => {
 app.use(async ctx => {
   log(`🔖 5`)
   ctx.body = 'Hello World';
+  log(`🔖 ???`)
 });
 
 app.listen(3000);
